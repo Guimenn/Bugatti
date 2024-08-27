@@ -1,0 +1,200 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	 	background-image: url(../img/bugatti-chiron-black-background-hypercars-5k-3840x2160-7133.jpg);
+		background-size: cover;
+		background-position: center bottom;
+		height: 100vh;
+
+}
+
+header {
+	background-color: rgb(0, 0, 0);
+	position: sticky;
+    top: 0;
+}
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+nav ul, img{
+	display: flex;
+	color: rgb(255, 255, 255);	
+}
+nav ul li {
+	list-style-type: none;
+	margin: auto 35px;
+	font-weight: bold;
+	font-size: 1.2em;
+	opacity: 50%;
+}
+
+nav ul li:hover {
+	opacity: 100%;
+	transition: 0.5s;
+}
+
+li a  {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+.titulo {
+	padding-top: 16%;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.753);
+	text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.438);
+	line-height: 55px;
+}
+
+h1 {
+	font-size: 4em;
+	color: rgba(255, 255, 255, 0.932);
+}
+
+h2 {
+	font-size: 1.7em;
+}
+
+h5 {
+	font-size: 1em;
+	color: rgba(255, 255, 255, 0.39);
+}
+
+li a:hover {
+	transition: 0.5s;
+	text-shadow:
+	0 0 7px #aaaaaa,
+	0 0 10px #bdbdbd,
+	0 0 21px #cccccc,
+	0 0 42px rgb(221, 221, 221),
+	0 0 82px #eeeeee,
+	0 0 92px rgb(16, 17, 17),
+	0 0 102px rgb(107, 107, 107),
+	0 0 151px rgb(141, 141, 141);
+}
+
+nav>img {
+	color: white;
+	width: 75px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}	
+
+nav>img:hover {
+	cursor: pointer;
+}
+
+section.banner2 {
+	background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(3, 3, 3), rgb(0, 0, 0));
+	color: white;
+	height: 10px;
+	
+}
+
+section.banner {
+	background-image: linear-gradient(to left, black, rgb(5, 5, 5), black);
+	color: white;
+	height: 10px;
+}
+
+.fundo {
+	background-size: cover;
+	background-position: center bottom;
+	height: 100vh;
+	
+	
+}
+
+.fundo2 {
+	background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.945));
+}
+
+.produtos {
+	display: flex;
+	justify-content: space-around;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+
+	
+}
+
+.card {
+	width: 500px;
+	border: 1px solid rgb(160, 160, 160);
+	padding: 10px;
+	border-radius: 10px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	height: 550px;
+	transform: scale(1.1);
+	transition: 0.7s;
+	opacity: 40%;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	border: 1px solid rgb(40, 40, 40);
+	opacity: 100%;
+}
+
+.card img {
+	width: 100%;
+	border-radius: 3px;
+
+}
+
+.card h3 {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	padding-top: 5px;
+}
+.card p {
+	text-align: center;
+	color: white;
+	margin: 10px 20px 0px 20px;
+	font-size: 1.1em;
+
+}
+
+.card button {
+	background-color: white;
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+	margin: 50px auto 0px;
+	display: block;
+	font-weight: bold;
+}
+
+button:hover {
+	background-color: rgb(238, 238, 238);
+	cursor: pointer;
+}
+
+footer {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgba(216, 216, 216, 0.274);
+}
