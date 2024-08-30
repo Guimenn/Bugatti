@@ -10,23 +10,29 @@
 @media screen and (min-width: 651px) {
 
 body {
-	background-image: url(../img/bugatti-chiron-black-background-hypercars-5k-3840x2160-7133.jpg);
-	background-size: cover;
-	background-position: center bottom;
-	height: 100vh;
-
+	
 }
 
+.ffp {
+	background-image: url(../img/xl\ \(2\).jfif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 100%;
+}
 
 header {
 	background-color: rgb(0, 0, 0);
+	top: 0;
 	position: sticky;
-    top: 0;
+	
 }
 
 nav {
 	display: flex;
 	justify-content: space-evenly;
+	top: 0;
+	position: sticky;
 }
 
 .navbar {
@@ -71,17 +77,20 @@ li a  {
 
 h1 {
 	font-size: 4em;
-	color: rgba(255, 255, 255, 0.932);
+	color: rgba(0, 0, 0, 0.932);
+	font-family: "Bebas Neue", sans-serif;
 }
 
 h2 {
-	font-size: 1.7em;
-	
+	font-size: 2em;
+	font-family: "Bebas Neue", sans-serif;
+	color: rgb(14, 14, 29);
 }
 
 h5 {
 	font-size: 1em;
-	color: rgba(255, 255, 255, 0.39);
+	color: rgba(0, 0, 0, 0.801);
+	font-family: "Bebas Neue", sans-serif;
 }
 
 li a:hover {
@@ -129,73 +138,52 @@ section.banner {
 	
 }
 
-.fundo2 {
-	background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.945));
-}
-
-.produtos {
+.text {
+	background-color: black;
+	font-size: 28px;
+	color: white;
 	display: flex;
 	justify-content: space-around;
-	overflow-y: scroll;
-	scroll-behavior: smooth;
-
-	
+	padding: 50px 0;
 }
 
-.card {
-	width: 25vw;
-	border: 1px solid rgb(160, 160, 160);
-	padding: 10px;
-	border-radius: 10px;
-	margin-top: 35px;
-	margin-bottom: 35px;
-	height: 550px;
-	transform: scale(1.1);
-	transition: 0.7s;
-	opacity: 40%;
+.texto {
+	width: 800px;
 }
 
-.card:hover {
-	transform: scale(1.05);
-	border: 1px solid rgb(40, 40, 40);
-	opacity: 100%;
+.molsheim {
+	width: 408px;
+	font-weight: 400;
+	height: 100px;
 }
 
-.card img {
-	width: 100%;
-	border-radius: 3px;
-
-}
-
-.card h3 {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	text-align: center;
+.sect1 {
+	background-color: black;
 	color: white;
-	font-weight: bold;
-	padding-top: 5px;
 }
-.card p {
+
+.text1 {
 	text-align: center;
-	color: white;
-	margin: 10px 20px 20px 20px;
-	font-size: 1.1em;
-
-}
-
-.card button {
-	background-color: white;
-	width: 100px;
-	height: 30px;
-	border-radius: 10px;
 	margin: auto;
-	display: block;
-	font-weight: bold;
+	width: 50vw;
 }
 
-button:hover {
-	background-color: rgb(238, 238, 238);
-	cursor: pointer;
+.text1 > h1 { 
+		padding: 30px 0 ;
+		font-size: 4em;
+		color: rgba(255, 255, 255, 0.932);
+		font-family: "Bebas Neue", sans-serif;
+	}
+
+.text1 > p {
+	font-size: 20px;
+	text-align: justify;
 }
+
+
+
+
+
 
 footer {
     background-color: rgb(15, 15, 15);
@@ -221,11 +209,16 @@ footer a:hover {
 @media screen and (max-width: 650px) {
 
 	body {
-	background-image: url(../img/bugatti-chiron-black-background-hypercars-5k-3840x2160-7133.jpg);
-	   background-size: cover;
-	   background-position: center bottom;
-	   height: 100vh;
+	
 
+}
+
+.ffp {
+	background-image: url(../img/xl\ \(2\).jfif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center left;
+	height: 100vh;
 }
 
 header {
@@ -233,6 +226,8 @@ header {
    position: sticky;
    top: 0;
 }
+
+
 
 nav {
    display: flex;
@@ -271,18 +266,19 @@ li a  {
 
 h1 {
    font-size: 2em;
-   color: rgba(255, 255, 255, 0.932);
+   color: rgba(0, 0, 0, 0.932);
    font-family: "Bebas Neue", sans-serif;
 }
 
 h2 {
    font-size: 1.2em;
+   color: rgb(17, 17, 26);
    font-family: "Bebas Neue", sans-serif;
 }
 
 h5 {
    font-size: 0.6em;
-   color: rgba(255, 255, 255, 0.39);
+   color: rgba(0, 0, 0, 0.877);
 }
 
 li a:hover {
@@ -330,74 +326,53 @@ section.banner {
    
 }
 
-.fundo2 {
-   background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.945));
+.text {
+	background-color: black;
+	font-size: 28px;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	height: 100%;
 }
 
-.produtos {
-	display: grid;
-	grid-template-columns: auto;
-	justify-content: center;
-	overflow-y: scroll;
-	scroll-behavior: smooth;
-
-   
+.texto {
+	width: 800px;
 }
 
-.card {
-   width: 350px;
-   border: 1px solid rgb(160, 160, 160);
-   padding: 10px;
-   border-radius: 10px;
-   margin-top: 35px;
-   margin-bottom: 35px;
-   height: 550px;
-   transform: scale(1.1);
-   transition: 0.7s;
-   opacity: 40%;
+.molsheim {
+	width: 408px;
+	font-weight: 400;
+	height: 100px;
 }
 
-.card:hover {
-   transform: scale(1.05);
-   border: 1px solid rgb(40, 40, 40);
-   opacity: 100%;
+.sect1 {
+	background-color: black;
+	color: white;
 }
 
-.card img {
-   width: 100%;
-   border-radius: 3px;
-
+.text1 {
+	text-align: center;
+	margin: auto;
+	width: 115vw;
 }
 
-.card h3 {
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   text-align: center;
-   color: white;
-   font-weight: bold;
-   padding-top: 5px;
-}
-.card p {
-   text-align: center;
-   color: white;
-   margin: 10px 20px 0px 20px;
-   font-size: 0.7em;
+.text1 > h1 { 
+		padding: 30px 0 ;
+		font-size: 4em;
+		color: rgba(255, 255, 255, 0.932);
+		font-family: "Bebas Neue", sans-serif;
+	}
 
+.text1 > p {
+	font-size: 20px;
+	text-align: justify;
 }
 
-.card button {
-   background-color: white;
-   width: 100px;
-   height: 30px;
-   border-radius: 10px;
-   margin: 50px auto 0px;
-   display: block;
-   font-weight: bold;
-}
 
-button:hover {
-   background-color: rgb(238, 238, 238);
-   cursor: pointer;
-}
+
+
+
+
 
 footer {
    background-color: rgb(15, 15, 15);
