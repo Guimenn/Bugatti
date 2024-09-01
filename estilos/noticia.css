@@ -2,12 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
 * {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0px;
 	padding: 0px;
 }
-@media screen and (min-width: 651px) {
+@media screen and (min-width: 1201px) {
 
 body {
 	
@@ -118,10 +120,8 @@ nav>img:hover {
 }
 
 section.banner2 {
-	background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(3, 3, 3), rgb(0, 0, 0));
-	color: white;
+	background-image: linear-gradient(to left, black, #004BFA, black);
 	height: 10px;
-	
 }
 
 section.banner {
@@ -178,6 +178,23 @@ section.banner {
 .text1 > p {
 	font-size: 20px;
 	text-align: justify;
+	line-height: 30px;
+}
+
+.citacao {
+	background-color: #004BFA;
+	font-size: 20px;
+	width: 30vw;
+	padding: 40px;
+	margin: auto;
+	line-height: 30px;
+}
+
+.c1 > p	 {
+	font-family: "Lekton", monospace;
+	display: flex;
+	justify-content: flex-start;
+	font-weight: 500;
 }
 
 
@@ -191,12 +208,15 @@ footer {
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
+	height: 30px;
 }
 
 footer a {
     color: white;
     font-weight: bolder;
     text-decoration: none;
+	display: block;
+	margin: auto;
 }
 
 footer a:hover {
@@ -257,11 +277,11 @@ li a  {
 }
 
 .titulo {
-   padding-top: 16%;
+   padding-top: 30%;
    text-align: center;
    color: rgba(255, 255, 255, 0.753);
    text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.438);
-   line-height: 55px;
+   line-height: 36px;
 }
 
 h1 {
@@ -277,7 +297,7 @@ h2 {
 }
 
 h5 {
-   font-size: 0.6em;
+   font-size: 0.8em;
    color: rgba(0, 0, 0, 0.877);
 }
 
@@ -306,10 +326,8 @@ nav>img:hover {
 }
 
 section.banner2 {
-   background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(3, 3, 3), rgb(0, 0, 0));
-   color: white;
-   height: 10px;
-   
+	background-image: linear-gradient(to left, black, #004BFA, black);
+	height: 10px;
 }
 
 section.banner {
@@ -330,19 +348,19 @@ section.banner {
 	background-color: black;
 	font-size: 28px;
 	color: white;
-	display: flex;
-	justify-content: space-around;
+	display: grid;
+	grid-template-rows: auto;
 	height: 100%;
 }
 
 .texto {
-	width: 800px;
+	font-size: 20px;
+	padding: 0px 10px 10px 10px;
 }
 
 .molsheim {
-	width: 408px;
-	font-weight: 400;
-	height: 100px;
+	font-size: 20px;
+	padding: 20px 10px 0px 10px;
 }
 
 .sect1 {
@@ -353,21 +371,38 @@ section.banner {
 .text1 {
 	text-align: center;
 	margin: auto;
-	width: 115vw;
+	width: 90vw;
 }
 
 .text1 > h1 { 
-		padding: 30px 0 ;
-		font-size: 4em;
-		color: rgba(255, 255, 255, 0.932);
-		font-family: "Bebas Neue", sans-serif;
-	}
+	padding: 30px 0 ;
+	font-size: 4em;
+	color: rgba(255, 255, 255, 0.932);
+	font-family: "Bebas Neue", sans-serif;
+}
 
 .text1 > p {
 	font-size: 20px;
 	text-align: justify;
+	line-height: 30px;
 }
 
+.citacao {
+	background-color: #004BFA;
+	font-size: 20px;
+	width: 80vw;
+	padding: 20px	;
+	text-align: center;
+	margin: auto 0 auto;
+	line-height: 30px;
+}
+
+.c1 > p	 {
+	font-family: "Lekton", monospace;
+	display: flex;
+	justify-content: flex-start;
+	font-weight: 500;
+}
 
 
 
@@ -375,17 +410,20 @@ section.banner {
 
 
 footer {
-   background-color: rgb(15, 15, 15);
-   color: white;
-   text-align: center;
-   font-size: 0.8em;
-   padding: 5px;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+	height: 30px;
 }
 
 footer a {
-   color: white;
-   font-weight: bolder;
-   text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+	display: block;
+	margin: auto;
 }
 
 footer a:hover {
@@ -545,4 +583,222 @@ footer a:hover {
 }
 
 
+@media screen and (min-width: 651px) and (max-width: 1200px) {
+	body {
+	
+	}
+	
+	.ffp {
+		background-image: url(../img/xl\ \(2\).jfif);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left;
+		height: 100%;
+	}
+	
+	header {
+		background-color: rgb(0, 0, 0);
+		top: 0;
+		position: sticky;
+		
+	}
+	
+	nav {
+		display: flex;
+		justify-content: space-evenly;
+		top: 0;
+		position: sticky;
+	}
+	
+	.navbar {
+		display: none;
+	}
+	
+	nav ul, img{
+		display: flex;
+		color: rgb(255, 255, 255);	
+	}
+	
+	ul > img {
+		
+		height: 55px;
+	}
+	nav ul li {
+	
+		list-style-type: none;
+		margin: auto 35px;
+		font-weight: bold;
+		font-size: 1.2em;
+		opacity: 50%;
+	}
+	
+	nav ul li:hover {
+		opacity: 100%;
+		transition: 0.5s;
+	}
+	
+	li a  {
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+	}
+	
+	.titulo {
+		padding-top: 30%;
+		text-align: center;
+		color: rgba(255, 255, 255, 0.753);
+		text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.438);
+		line-height: 55px;
+	}
+	
+	h1 {
+		font-size: 4em;
+		color: rgba(0, 0, 0, 0.932);
+		font-family: "Bebas Neue", sans-serif;
+	}
+	
+	h2 {
+		font-size: 2em;
+		font-family: "Bebas Neue", sans-serif;
+		color: rgb(14, 14, 29);
+	}
+	
+	h5 {
+		font-size: 1em;
+		color: rgba(0, 0, 0, 0.801);
+		font-family: "Bebas Neue", sans-serif;
+	}
+	
+	li a:hover {
+		transition: 0.5s;
+		text-shadow:
+		0 0 7px #aaaaaa,
+		0 0 10px #bdbdbd,
+		0 0 21px #cccccc,
+		0 0 42px rgb(221, 221, 221),
+		0 0 82px #eeeeee,
+		0 0 92px rgb(16, 17, 17),
+		0 0 102px rgb(107, 107, 107),
+		0 0 151px rgb(141, 141, 141);
+	}
+	
+	nav>img {
+		color: white;
+		width: 75px;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}	
+	
+	nav>img:hover {
+		cursor: pointer;
+	}
+	
+	section.banner2 {
+		background-image: linear-gradient(to left, black, #004BFA, black);
+		height: 10px;
+	}
+	
+	section.banner {
+		background-image: linear-gradient(to left, black, rgb(5, 5, 5), black);
+		color: white;
+		height: 10px;
+	}
+	
+	.fundo {
+		background-size: cover;
+		background-position: center bottom;
+		height: 100vh;
+		
+		
+	}
+	
+	.text {
+		background-color: black;
+		font-size: 28px;
+		color: white;
+		display: flex;
+		justify-content: space-around;
+		padding: 50px 0;
+	}
+	
+	.texto {
+		width: 800px;
+	}
+	
+	.molsheim {
+		width: 408px;
+		font-weight: 400;
+		height: 100px;
+	}
+	
+	.sect1 {
+		background-color: black;
+		color: white;
+	}
+	
+	.text1 {
+		text-align: center;
+		margin: auto;
+		width: 50vw;
+	}
+	
+	.text1 > h1 { 
+			padding: 30px 0 ;
+			font-size: 4em;
+			color: rgba(255, 255, 255, 0.932);
+			font-family: "Bebas Neue", sans-serif;
+		}
+	
+	.text1 > p {
+		font-size: 20px;
+		text-align: justify;
+		line-height: 30px;
+	}
+	
+	.citacao {
+		background-color: #004BFA;
+		font-size: 20px;
+		width: 80vw;
+		display: block;
+		margin: auto;
+		text-align: center;
+		padding: 40px;
+		line-height: 30px;
+	}
+	
+	.c1 > p	 {
+		font-family: "Lekton", monospace;
+		display: flex;
+		justify-content: flex-start;
+		font-weight: 500;
+	}
+	
+	
+	
+	
+	
+	
+	footer {
+		background-color: rgb(15, 15, 15);
+		color: white;
+		text-align: center;
+		font-size: 0.8em;
+		padding: 5px;
+		height: 30px;
+	}
+	
+	footer a {
+		color: white;
+		font-weight: bolder;
+		text-decoration: none;
+		display: block;
+		margin: auto;
+	}
+	
+	footer a:hover {
+		text-decoration: underline;
+		color: rgba(216, 216, 216, 0.274);
+	}
+
+
+}
 /* 
