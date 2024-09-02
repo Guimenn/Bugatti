@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/contato.css">
+    <link rel="stylesheet" href="estilos/mediaquery-contato.css">
+</head>
+<body>
+
+	<header>
+		<nav>
+			<div class="desktop">
+				
+				<ul>
+					<img src="img/OIP (2).jfif" alt="Logo" href="index.html">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#page-2">Sobre Nós</a></li>
+					<li><a href="contato.html">Contato</a></li>
+					<li><a href="noticia.html">Notícia</a></li>
+				</ul>
+			</div>
+			<div class="navbar">
+				<div class="container nav-container">
+					<input class="checkbox" type="checkbox" name="" id="" />
+					<div class="hamburger-lines">
+					  <span class="line line1"></span>
+					  <span class="line line2"></span>
+					  <span class="line line3"></span>
+					</div>  
+					<div class="logo">
+						<img src="img/OIP (2).jfif" alt="Logo">
+					  </div>
+					  <div class="menu-items">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Sobre Nós</a></li>
+						<li><a href="contato.html">Contato</a></li>
+						<li><a href="noticia.html">Notícia</a></li>
+					  </div>
+					</div>
+				  </div>
+				 
+		</nav>
+	
+	<section class="banner2">
+		<div class="banner2">
+			<span></span>
+		</div>
+	</section>
+	</header>
+	<main>
+		
+        <section id="login">
+            <div id="imagem">                   
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente ! <br>Faça login para acessar o suporte.
+                </p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input type="email" name="email" id="iemail" required placeholder="Digite seu e-mail" maxlength="30">
+                        <label for="iemail">Email</label>
+                    </div>
+                    <div class="campo">
+                        <i class="material-icons">vpn_keyz</i>
+                        <input type="password" name="pass" id="ipass" required placeholder="Insira sua senha" minlength="8" maxlength="20">
+                        <label for="ipass">Senha</label>
+                    </div>
+                    <div id="submit">
+                        <input type="submit" value="Entrar">
+                    </div>
+                    <a href="#" class="botao">Esqueci Minha senha <i class="material-icons">mail</i></a>
+                </form>
+
+            </div>
+        </section>
+    </main>
+	<footer>
+		<p>Site criado por <a href="#">Guimen</a></p>
+	</footer>
+</body>
+</html>
