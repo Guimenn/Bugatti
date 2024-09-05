@@ -30,6 +30,22 @@ nav {
 	justify-content: space-evenly;
 	top: 0;
 	position: sticky;
+	animation: fadeIn 0.5s ease-in-out 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-40px); }
+    100% { opacity: 10; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 10; transform: translateY(0); }
 }
 
 .navbar {
@@ -70,24 +86,28 @@ li a  {
 	color: rgba(255, 255, 255, 0.753);
 	text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.438);
 	line-height: 55px;
+	animation: fadeInUp 2.5s ease-in-out 0.3s forwards;
 }
 
 h1 {
 	font-size: 4em;
 	color: rgba(0, 0, 0, 0.932);
 	font-family: "Bebas Neue", sans-serif;
+	animation: fadeIn 3.5s ease-in-out;
 }
 
 h2 {
 	font-size: 2em;
 	font-family: "Bebas Neue", sans-serif;
 	color: rgb(14, 14, 29);
+	animation: fadeInDown 1.8s ease-out 0.5s backwards;
 }
 
 h5 {
 	font-size: 1em;
 	color: rgba(0, 0, 0, 0.801);
 	font-family: "Bebas Neue", sans-serif;
+	animation: fadeInUp 1.8s ease-in-out 0.5s forwards;
 }
 
 li a:hover {
@@ -192,6 +212,9 @@ section.banner {
 	font-weight: 500;
 }
 
+p {
+	animation: fadeInUp 5s ease-in-out 0.5s forwards;
+}
 
 
 
