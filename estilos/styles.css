@@ -202,7 +202,6 @@ section ul li::before {
 section.banner2 {
 	background-image: linear-gradient(to left, black, #004BFA, black);
 	height: 10px;
-	margin-top: 50px;
 }
 
 section.mistral img:hover {

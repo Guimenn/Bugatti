@@ -1,0 +1,412 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+header {
+	background-color: rgb(0, 0, 0);
+	position: sticky;
+    top: 0;
+}
+
+ nav {
+	display: flex;
+	justify-content: space-evenly;
+	animation: fadeIn 1s ease-in-out 0.3s forwards;
+	z-index: 4;
+} 
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-40px); }
+    100% { opacity: 10; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 10; transform: translateY(0); }
+}
+
+.navbar {
+	display: none;
+}
+
+nav ul, img{
+	display: flex;
+	color: rgb(255, 255, 255);	
+}
+
+ul > img {
+	
+	height: 55px;
+}
+nav ul li {
+
+	list-style-type: none;
+	margin: auto 35px;
+	font-weight: bold;
+	font-size: 1.2em;
+	opacity: 50%;
+}
+
+nav ul li:hover {
+	opacity: 100%;
+	transition: 0.5s;
+}
+
+li a  {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+
+.titulo {
+	padding-top: 16%;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.753);
+	text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.438);
+	line-height: 55px;
+
+}
+
+h1 {
+	font-size: 4em;
+	color: rgba(255, 255, 255, 0.932);
+	animation: fadeIn 3.5s ease-in-out;
+}
+
+h2 {
+	font-size: 1.7em;
+	animation: fadeInDown 1.8s ease-out 0.5s backwards;
+	
+}
+
+h5 {
+	font-size: 1em;
+	color: rgba(255, 255, 255, 0.39);
+	animation: fadeInUp 1.8s ease-in-out 0.5s forwards;
+}
+
+li a:hover {
+	transition: 0.5s;
+	text-shadow:
+	0 0 7px #aaaaaa,
+	0 0 10px #bdbdbd,
+	0 0 21px #cccccc,
+	0 0 42px rgb(221, 221, 221),
+	0 0 82px #eeeeee,
+	0 0 92px rgb(16, 17, 17),
+	0 0 102px rgb(107, 107, 107),
+	0 0 151px rgb(141, 141, 141);
+}
+
+nav>img {
+	color: white;
+	width: 75px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}	
+
+nav>img:hover {
+	cursor: pointer;
+}
+
+
+
+
+section.banner2 {
+	background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(3, 3, 3), rgb(0, 0, 0));
+	color: white;
+	height: 10px;
+	
+}
+
+.fundo {
+	background-image: url(../img/bugatti-chiron-black-background-hypercars-5k-3840x2160-7133.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	height: 95vh;
+	
+	
+}
+
+
+
+
+.t2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/bugatti_centodieci_prototype_4k-HD.jpg');
+	z-index: 2;
+	opacity: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.t2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+}
+
+.t2 h1 {
+    font-size: 80px;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.t2	 p {
+    font-size: 24px;
+    z-index: 2;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+
+.btn1 {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 30px;
+	text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.btn1:hover {
+    background-color: #fff;
+    color: #004BFA;
+    transform: scale(1.05);
+}
+
+section.banner2 {
+	background-image: linear-gradient(to left, black, #004BFA, black);
+	height: 10px;
+}
+
+/* Seção de Características */
+.features {
+    padding: 60px 40px;
+    background-color: #111;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.features::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+    z-index: 1;
+}
+
+.features h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    display: inline-block;
+}
+
+.features h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature-item {
+    width: 29%;
+    padding: 40px;
+    background-color: #222;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #333;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.feature-item h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #004BFA;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: bold;
+}
+
+.feature-item h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 3px;
+    background-color: #004BFA;
+	transition: left 0.5s ease;
+}
+
+.feature-item p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.feature-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(0, 75, 250, 0.4);
+    border-color: #004BFA;
+}
+
+.feature-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: left 0.5s ease;
+}
+
+.feature-item:hover::before {
+    left: 100%;
+}
+
+/* Seção de Especificações */
+.specs {
+    padding: 60px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.specs h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.specs h2::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #004BFA;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.specs table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #fff;
+}
+
+.specs table th, .specs table td {
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #444;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.specs table th {
+    background-color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.specs table td {
+    background-color: #111;
+    color: #bbb;
+}
+
+.specs table td:hover {
+    background-color: #222;
+}
+
+footer {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgba(216, 216, 216, 0.274);
+}
