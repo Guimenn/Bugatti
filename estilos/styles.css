@@ -34,7 +34,7 @@ nav {
 
 @keyframes fadeIn {
     0% { opacity: 0; transform: scale(0.95); }
-    100% { opacity: 1; transform: scale(1); }
+    100% { opacity: 1; transform: scale(1.0); }
 }
 
 @keyframes fadeInDown {
@@ -160,12 +160,13 @@ main p {
     width: 48%;
     border-radius: 12px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-	animation: fadeIn 1.5s ease.3s forwards;
 }
 
+
 .gallery-container img:hover {
-    transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+	transform: scale(1.08);
+	
 }
 
 /* Lista de detalhes técnicos */
@@ -202,6 +203,11 @@ section.banner2 {
 	background-image: linear-gradient(to left, black, #004BFA, black);
 	height: 10px;
 	margin-top: 50px;
+}
+
+section.mistral img:hover {
+	box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+	transition-duration: 1s;
 }
 
 	
