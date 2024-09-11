@@ -32,53 +32,29 @@
         font-size: 0.6em;
         color: rgba(255, 255, 255, 0.39);
      }
-
-     .produtos {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
-        overflow-y: scroll;
-        scroll-behavior: smooth;
     
-       
-    }
-
-    .card {
-        width: 350px;
-        border: 1px solid rgb(160, 160, 160);
-        padding: 10px;
-        border-radius: 10px;
-        margin-top: 35px;
-        margin-bottom: 35px;
-        height: 550px;
-        transform: scale(1.1);
-        transition: 0.7s;
-        opacity: 40%;
+     .t2 {
+      background-position: center center;
      }
 
-     .card p {
-        text-align: center;
-        color: white;
-        margin: 10px 20px 0px 20px;
-        font-size: 0.7em;
+     #bolide {
+      background-position: center center;
+     }
+
+     .t3 {
+      background: url(../img/2024-bugatti-mistral.jpg);
+      background-position: center center;
+     }
+
+
+     .list {
+      display: grid;
+      grid-template-columns: max-content;
+      margin-left: 15px;
+
+     }
+
      
-     }
-
-     .card button {
-        background-color: white;
-        width: 100px;
-        height: 30px;
-        border-radius: 10px;
-        margin: 50px auto 0px;
-        display: block;
-        font-weight: bold;
-     }
-
-     .container {
-        max-width: 1050px;
-        width: 90%;
-        margin: auto;
-      }
       
       .navbar {
         width: 100%;
@@ -186,17 +162,17 @@
         font-weight: 500;
       }
       
-      .logo {
-        position: absolute;
-        top: 5px;
-        right: 15px;
-        font-size: 1.2rem;
-        color: #0e2431;
-      }
-    
-      .logo img {
-        height: 50px;
-      }
+        .logo {
+          position: absolute;
+          top: 5px;
+          right: 15px;
+          font-size: 1.2rem;
+          color: #0e2431;
+        }
+      
+        .logo img {
+          height: 50px;
+        }
       
       .nav-container input[type="checkbox"]:checked ~ .menu-items {
         transform: translateX(0);

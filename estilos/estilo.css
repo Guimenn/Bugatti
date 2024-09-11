@@ -3,6 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Meie+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&family=Mrs+Saint+Delafield&display=swap');
 * {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0px;
@@ -18,6 +19,11 @@ header {
 	background-color: rgb(0, 0, 0);
 	position: sticky;
     top: 0;
+    z-index: 50;
+}
+
+body h1 h2 h3 p {
+    animation: fadeInDown 1.8s ease-out 0.5s backwards; 
 }
 
  nav {
@@ -181,6 +187,20 @@ section.banner2 {
 	
 }
 
+section.banner1 {
+	background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0));
+	color: white;
+	height: 10px;
+	
+}
+
+section.banner3 {
+	background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(41, 41, 41), rgb(0, 0, 0));
+	color: white;
+	height: 10px;
+	
+}
+
 .fundo {
 	background-image: url(../img/bugatti-chiron-black-background-hypercars-5k-3840x2160-7133.jpg);
 	background-size: cover;
@@ -226,7 +246,6 @@ section.banner2 {
     z-index: 2;
     text-transform: uppercase;
     letter-spacing: 8px;
-    margin-bottom: 20px;
     color: #fff;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
     animation: fadeInDown 1.5s ease-in-out;
@@ -372,6 +391,96 @@ section.banner2 {
     left: 100%;
 }
 
+/*Seção 1 */
+.features1 {
+    padding: 60px 40px;
+    background-color: #111;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.features1::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+    z-index: 1;
+}
+
+
+
+.features1 h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    display: inline-block;
+}
+
+
+.feature-list1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature-item1 {
+    width: 29%;
+    padding: 40px;
+    background-color: #222;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #333;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.feature-item1 h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: bold;
+}
+
+
+.feature-item1 p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.feature-item1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(170, 164, 146, 0.4);
+    border-color: #ffffff;
+
+}
+
+.feature-item1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: left 0.5s ease;
+}
+
+.feature-item1:hover::before {
+    left: 100%;
+}
+
 /* Seção de Especificações */
 .specs {
     padding: 60px 20px;
@@ -394,7 +503,7 @@ section.banner2 {
     width: 50%;
     height: 3px;
     background-color: #004BFA;
-    bottom: -10px;
+    bottom: -10px;  
     left: 50%;
     transform: translateX(-50%);
 }
@@ -405,7 +514,7 @@ section.banner2 {
     max-width: 900px;
     margin: 0 auto;
     border-collapse: collapse;
-    border: 2px solid #fff;
+    border: 2px solid #ffffffd2;
 }
 
 .specs table th, .specs table td {
@@ -429,6 +538,230 @@ section.banner2 {
 
 .specs table td:hover {
     background-color: #222;
+}
+
+/* Specs centodieci */
+
+.specs1  {
+    padding: 60px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.specs1 h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.specs1 h2::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.089);
+    bottom: -10px;  
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.specs1 table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #fff;
+}
+
+.specs1 table th, .specs1 table td {
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #444;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.specs1 table th {
+    background-color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.specs1 table td {
+    background-color: #111;
+    color: #bbb;
+}
+
+.specs1 table td:hover {
+    background-color: #222;
+}
+/* la voiture noire */
+
+.t3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/R.jfif');
+	z-index: 2;
+	opacity: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.t3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+}
+
+.t3 h1 {
+    font-size: 80px;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.t3 h2 {
+    font-size: 40px;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+#noire{
+   text-shadow: 5px 5px 10px rgb(94, 79, 79);
+}
+
+.t3	 p {
+    font-size: 24px;
+    z-index: 2;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* features 2 */
+.features2 {
+    padding: 60px 40px;
+    background-color: #111;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.features2::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+    z-index: 1;
+}
+
+
+
+.features2 h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    display: inline-block;
+}
+
+
+.feature-list2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature-item2 {
+    width: 29%;
+    padding: 40px;
+    background-color: #d8d8d831;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #333;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.feature-item2 h3 {
+    text-shadow: 1px 1px 3px white;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: bold;
+}
+
+
+.feature-item2 p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #e6e6e6;
+}
+
+.feature-item2:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(170, 164, 146, 0.4);
+    border-color: #ffffff;
+
+}
+
+.feature-item2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    transition: left 0.5s ease;
+}
+
+.feature-item2:hover::before {
+    left: 100%;
+}
+
+#specs2 h2::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: #ffffff;
+    bottom: -10px;  
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 footer {

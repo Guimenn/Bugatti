@@ -1,0 +1,7 @@
+@media screen and (max-width: 650px) {
+	.features-list1 {
+	display: grid;
+	grid-template-rows: auto;
+	justify-content: center;
+}
+}
