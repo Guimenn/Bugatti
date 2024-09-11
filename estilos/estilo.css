@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meie+Script&display=swap');
 * {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0px;
@@ -126,6 +127,50 @@ nav>img:hover {
 	cursor: pointer;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown {
+    margin: 0px;
+}
+
+
+.dropbtn > img {
+    cursor: pointer;
+    width: 75px;
+}
+
+
+.dropdown-content {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 
 
 
@@ -213,6 +258,18 @@ section.banner2 {
     overflow: hidden;
 }
 
+#bolide {
+    background: url("../img/2020_bugatti_bolide_concept_9_2560x1440.jpg") no-repeat;
+    background-size: cover;
+}
+
+#bd1 {
+    font-family: "Meie Script", cursive;
+    font-weight: 200;
+    color: #004BFA;
+    margin-left: -60px;
+}
+
 
 
 .btn1:hover {
@@ -247,6 +304,8 @@ section.banner2 {
     z-index: 1;
 }
 
+
+
 .features h2 {
     font-size: 48px;
     margin-bottom: 40px;
@@ -255,17 +314,6 @@ section.banner2 {
     letter-spacing: 3px;
     position: relative;
     display: inline-block;
-}
-
-.features h2::after {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 3px;
-    background-color: #fff;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 
@@ -296,16 +344,6 @@ section.banner2 {
     font-weight: bold;
 }
 
-.feature-item h3::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 50px;
-    height: 3px;
-    background-color: #004BFA;
-	transition: left 0.5s ease;
-}
 
 .feature-item p {
     font-size: 18px;
@@ -353,13 +391,14 @@ section.banner2 {
 .specs h2::after {
     content: '';
     position: absolute;
-    width: 80px;
+    width: 50%;
     height: 3px;
     background-color: #004BFA;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
 }
+
 
 .specs table {
     width: 100%;
