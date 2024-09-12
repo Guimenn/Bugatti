@@ -27,6 +27,10 @@
         font-size: 1.2em;
         font-family: "Bebas Neue", sans-serif;
      }
+
+     h3 {
+      font-size: 1.2em;
+     }
      
      h5 {
         font-size: 0.6em;
@@ -35,10 +39,16 @@
     
      .t2 {
       background-position: center center;
+      text-align: center;
      }
 
      #bolide {
       background-position: center center;
+     }
+
+     #bd1 {
+      font-size: 3.2em;
+      text-align: center;
      }
 
      .t3 {
@@ -50,7 +60,7 @@
      .list {
       display: grid;
       grid-auto-columns: auto;
-      margin-left: calc(-7vw);
+      justify-content: center;
      }
 
      
@@ -161,21 +171,17 @@
         font-weight: 500;
       }
       
-        .logo {
-          display: flex;
-          justify-content: center;
-          align-items: center;    
-        }
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+      }
 
-        .logo ul {
-          margin: 0px;
-          padding: 0px;
-        }
-      
-        .logo img {
-          height: 50px;
-          margin-top: -20px ;
-        }
+
+      .logo img {
+        height: 50px;
+        margin-top: -20px;
+      }
       
       .nav-container input[type="checkbox"]:checked ~ .menu-items {
         transform: translateX(0);
