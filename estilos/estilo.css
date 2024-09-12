@@ -347,7 +347,7 @@ section.banner2 {
 }
 
 .feature-item {
-    width: 80vw;
+    width: 80%;
     padding: 40px;
     background-color: #222;
     border-radius: 10px;
@@ -436,7 +436,7 @@ section.banner2 {
 }
 
 .feature-item1 {
-    width: 80vw;
+    width: 80%;
     padding: 40px;
     background-color: #222;
     border-radius: 10px;
@@ -707,7 +707,7 @@ section.banner2 {
 }
 
 .feature-item2 {
-    width: 80vw;
+    width: 80%;
     padding: 40px;
     background-color: #d8d8d831;
     border-radius: 10px;
