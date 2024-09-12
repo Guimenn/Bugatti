@@ -308,7 +308,7 @@ section.banner2 {
     background-color: #111;
     text-align: center;
     position: relative;
-    z-index: 5;
+    z-index: 3;
 }
 
 .features::before {
@@ -332,7 +332,7 @@ section.banner2 {
     text-transform: uppercase;
     letter-spacing: 3px;
     position: relative;
-    display: inline-block;
+        display: inline-block;
 }
 
 
@@ -343,7 +343,7 @@ section.banner2 {
 }
 
 .feature-item {
-    width: 29%;
+    width: 80vw;
     padding: 40px;
     background-color: #222;
     border-radius: 10px;
@@ -432,7 +432,7 @@ section.banner2 {
 }
 
 .feature-item1 {
-    width: 29%;
+    width: 80vw;
     padding: 40px;
     background-color: #222;
     border-radius: 10px;
@@ -703,7 +703,7 @@ section.banner2 {
 }
 
 .feature-item2 {
-    width: 29%;
+    width: 80vw;
     padding: 40px;
     background-color: #d8d8d831;
     border-radius: 10px;

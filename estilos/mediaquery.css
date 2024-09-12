@@ -1,6 +1,6 @@
 @media screen and (max-width: 650px) {
 
-
+    
     .desktop {
         display: none;
     }
@@ -49,9 +49,8 @@
 
      .list {
       display: grid;
-      grid-template-columns: max-content;
-      margin-left: 15px;
-
+      grid-auto-columns: auto;
+      margin-left: calc(-7vw);
      }
 
      
