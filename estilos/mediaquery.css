@@ -162,15 +162,19 @@
       }
       
         .logo {
-          position: absolute;
-          top: 5px;
-          right: 15px;
-          font-size: 1.2rem;
-          color: #0e2431;
+          display: flex;
+          justify-content: center;
+          align-items: center;    
+        }
+
+        .logo ul {
+          margin: 0px;
+          padding: 0px;
         }
       
         .logo img {
           height: 50px;
+          margin-top: -20px ;
         }
       
       .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -196,6 +200,7 @@
       .desktop {
         display: none;
       }
+      
     
     
 }
