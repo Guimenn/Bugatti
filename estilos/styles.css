@@ -88,6 +88,7 @@ li a  {
 	animation: fadeInUp 2.5s ease-in-out 0.3s forwards;
 }
 
+
 li a:hover {
 	transition: 0.5s;
 	text-shadow:
