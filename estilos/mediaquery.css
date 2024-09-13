@@ -1,6 +1,6 @@
 @media screen and (max-width: 650px) {
 
-
+    
     .desktop {
         display: none;
     }
@@ -27,6 +27,10 @@
         font-size: 1.2em;
         font-family: "Bebas Neue", sans-serif;
      }
+
+     h3 {
+      font-size: 1.2em;
+     }
      
      h5 {
         font-size: 0.6em;
@@ -35,10 +39,16 @@
     
      .t2 {
       background-position: center center;
+      text-align: center;
      }
 
      #bolide {
       background-position: center center;
+     }
+
+     #bd1 {
+      font-size: 3.2em;
+      text-align: center;
      }
 
      .t3 {
@@ -49,12 +59,12 @@
 
      .list {
       display: grid;
-      grid-template-columns: max-content;
-      margin-left: 15px;
-
+      grid-auto-columns: auto;
+      justify-content: center;
+      z-index: -1;
+      margin-left: calc(-5vw);
      }
-
-     
+    
       
       .navbar {
         width: 100%;
@@ -162,17 +172,17 @@
         font-weight: 500;
       }
       
-        .logo {
-          position: absolute;
-          top: 5px;
-          right: 15px;
-          font-size: 1.2rem;
-          color: #0e2431;
-        }
-      
-        .logo img {
-          height: 50px;
-        }
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+      }
+
+
+      .logo img {
+        height: 50px;
+        margin-top: -20px;
+      }
       
       .nav-container input[type="checkbox"]:checked ~ .menu-items {
         transform: translateX(0);
@@ -197,6 +207,5 @@
       .desktop {
         display: none;
       }
-    
     
 }
